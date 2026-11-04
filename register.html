@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kayıt Ol | LoadHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="register-page">
+
+        <div class="container">
+
+            <div class="register-wrapper">
+
+
+                <div class="register-left">
+                    <div class="register-brand">
+
+                        <a href="index.html" class="register-logo">
+
+                            <img src="images/logo.jpeg" alt="LoadHub Logo">
+
+                            <span>LoadHub</span>
+
+                        </a>
+
+                        <span class="register-badge">
+
+                            Ücretsiz Üyelik
+
+                        </span>
+
+                        <h1>
+
+                            LoadHub Ailesine
+                            <br>
+                            Katılın
+
+                        </h1>
+
+                        <p>
+
+                            Yük sahibi veya nakliye firması olarak ücretsiz hesabınızı oluşturun,
+                            güvenilir iş ortaklarıyla buluşun ve taşımacılık süreçlerinizi dijitalleştirin.
+
+                        </p>
+
+                        <ul class="register-features">
+
+                            <li>
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Ücretsiz Hesap Oluşturma
+
+                            </li>
+
+                            <li>
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Güvenilir İş Ortakları
+
+                            </li>
+
+                            <li>
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Türkiye'nin 81 İlinde Hizmet
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="register-right">
+                    <div class="register-card">
+
+                        <span class="register-card-badge">
+
+                            Hesap Oluştur
+
+                        </span>
+
+                        <h2>
+
+                            Yeni Hesap Oluştur
+
+                        </h2>
+
+                        <p>
+
+                            Bilgilerinizi doldurun ve LoadHub'a ücretsiz katılın.
+
+                        </p>
+
+                        <form class="register-form" id="registerForm">
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="firstName">
+
+                                        Ad
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-user"></i>
+
+                                        <input type="text" id="firstName" placeholder="Adınız">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="lastName">
+
+                                        Soyad
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-user"></i>
+
+                                        <input type="text" id="lastName" placeholder="Soyadınız">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="email">
+
+                                    E-posta
+
+                                </label>
+
+                                <div class="input-group">
+
+                                    <i class="fa-solid fa-envelope"></i>
+
+                                    <input type="email" id="email" placeholder="ornek@mail.com">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="phone">
+
+                                    Telefon
+
+                                </label>
+
+                                <div class="input-group">
+
+                                    <i class="fa-solid fa-phone"></i>
+
+                                    <input type="tel" id="phone" placeholder="05XX XXX XX XX">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="company">
+
+                                    Şirket Adı
+
+                                </label>
+
+                                <div class="input-group">
+
+                                    <i class="fa-solid fa-building"></i>
+
+                                    <input type="text" id="company" placeholder="Şirket Adı">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="accountType">
+
+                                    Hesap Türü
+
+                                </label>
+
+                                <div class="input-group">
+
+                                    <i class="fa-solid fa-users"></i>
+
+                                    <select id="accountType">
+
+                                        <option value="Company">Şirket</option>
+
+                                        <option value="Carrier">Nakliye Firması</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="password">
+
+                                        Şifre
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-lock"></i>
+
+                                        <input type="password" id="password" placeholder="********">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="confirmPassword">
+
+                                        Şifre Tekrar
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-lock"></i>
+
+                                        <input type="password" id="confirmPassword" placeholder="********">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <label class="remember-me">
+
+                                <input type="checkbox">
+
+                                <span>
+
+                                    Kullanım Koşullarını ve Gizlilik Politikasını kabul ediyorum.
+
+                                </span>
+
+                            </label>
+
+                            <button class="btn btn-primary" type="submit">
+
+                                Hesap Oluştur
+
+                            </button>
+
+                        </form>
+
+                        <div class="login-divider">
+
+                            <span>veya</span>
+
+                        </div>
+
+                        <p class="register-link">
+
+                            Zaten hesabınız var mı?
+
+                            <a href="login.html">
+
+                                Giriş Yap
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+
+</body>
+
+</html>

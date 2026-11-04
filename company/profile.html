@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil | LoadHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="navbar">
+
+                <a href="../index.html" class="logo">
+
+                    <img src="../images/logo.jpeg" alt="LoadHub">
+
+                    <span>LoadHub</span>
+
+                </a>
+
+
+                <nav>
+
+                    <ul class="nav-menu">
+                        <li class="notification-wrapper">
+
+                            <button type="button" class="notification-button" id="notificationButton">
+
+                                <i class="fa-solid fa-bell"></i>
+
+                                <span class="notification-badge" id="notificationBadge">
+                                    0
+                                </span>
+
+                            </button>
+
+                            <div class="notification-dropdown" id="notificationDropdown">
+
+                                <div class="notification-header">
+
+                                    <h3>Bildirimler</h3>
+
+                                    <button type="button" id="markAllNotificationsRead">
+
+                                        Tümünü okundu işaretle
+
+                                    </button>
+
+                                </div>
+
+                                <div id="notificationList" class="notification-list">
+
+                                    <p class="notification-empty">
+                                        Bildirim bulunmuyor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <a href="dashboard.html">
+
+                                Panel
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="my-listings.html">
+
+                                İlanlarım
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="offers.html">
+
+                                Teklifler
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="messages.html">
+
+                                Mesajlar
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="profile.html" class="active">
+
+                                Profil
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+    <section class="company-profile">
+
+        <div class="container">
+
+            <div class="company-profile-layout">
+
+                <div class="company-profile-card">
+
+                    <div class="company-profile-header">
+
+                        <div class="company-profile-logo">
+
+                            <img src="../images/logo.jpeg" alt="LoadHub Firma Logosu">
+
+                        </div>
+
+                        <h2 id="companyTitle">
+
+                            Firma Adı
+
+                        </h2>
+
+                        <p>
+
+                            Kurumsal Üye
+
+                        </p>
+
+                    </div>
+
+                    <div class="company-profile-status">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Doğrulanmış Firma
+
+                    </div>
+
+                </div>
+
+                <div class="company-profile-content">
+
+                    <div class="company-profile-card">
+
+                        <div class="company-profile-section-header">
+
+                            <div>
+
+                                <h2>
+
+                                    Firma Bilgileri
+
+                                </h2>
+
+                                <p>
+
+                                    Firmanızla ilgili temel bilgileri güncelleyin.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <form id="companyProfileForm" class="company-profile-form">
+
+                            <div class="company-profile-fields">
+
+                                <div class="company-profile-field">
+
+                                    <label>
+
+                                        Firma Adı
+
+                                    </label>
+
+                                    <input type="text" id="companyName" placeholder="Firma adını giriniz">
+
+                                </div>
+
+                                <div class="company-profile-field">
+
+                                    <label>
+
+                                        Yetkili Adı Soyadı
+
+                                    </label>
+
+                                    <input type="text" id="contactName" placeholder="Yetkili adı soyadı">
+
+                                </div>
+
+                                <div class="company-profile-field">
+
+                                    <label>
+
+                                        E-posta
+
+                                    </label>
+
+                                    <input type="email" id="companyEmail" placeholder="E-posta adresi">
+
+                                </div>
+
+                                <div class="company-profile-field">
+
+                                    <label>
+
+                                        Telefon
+
+                                    </label>
+
+                                    <input type="tel" id="companyPhone" placeholder="Telefon numarası">
+
+                                </div>
+
+                                <div class="company-profile-field">
+
+                                    <label>
+
+                                        Vergi Numarası
+
+                                    </label>
+
+                                    <input type="text" id="taxNumber" placeholder="Vergi numarası">
+
+                                </div>
+
+                                <div class="company-profile-field">
+
+                                    <label>
+
+                                        Web Sitesi
+
+                                    </label>
+
+                                    <input type="url" id="website" placeholder="Web sitesi">
+
+                                </div>
+
+                            </div>
+
+                            <div class="company-profile-field">
+
+                                <label>
+
+                                    Firma Adresi
+
+                                </label>
+
+                                <textarea id="address" rows="4" placeholder="Firma adresini giriniz"></textarea>
+
+                            </div>
+
+                            <div class="company-profile-field">
+
+                                <label>
+
+                                    Firma Açıklaması
+
+                                </label>
+
+                                <textarea id="description" rows="5"
+                                    placeholder="Firmanız hakkında kısa bilgi"></textarea>
+
+                            </div>
+
+                            <div class="company-profile-actions">
+
+                                <button type="submit" class="btn btn-primary">
+
+                                    <i class="fa-solid fa-floppy-disk"></i>
+
+                                    Bilgileri Güncelle
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="company-profile-card company-profile-security">
+
+                        <div class="company-profile-section-header">
+
+                            <div>
+
+                                <h2>
+
+                                    Güvenlik
+
+                                </h2>
+
+                                <p>
+
+                                    Hesabınızın şifresini buradan değiştirebilirsiniz.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <form id="companyPasswordForm" class="company-profile-form">
+
+                            <div class="company-profile-fields">
+
+                                <div class="company-profile-field">
+
+                                    <label>
+
+                                        Mevcut Şifre
+
+                                    </label>
+
+                                    <input type="password" id="currentPassword" placeholder="Mevcut şifreniz">
+
+                                </div>
+
+                                <div class="company-profile-field">
+
+                                    <label>
+
+                                        Yeni Şifre
+
+                                    </label>
+
+                                    <input type="password" id="newPassword" placeholder="Yeni şifre">
+
+                                </div>
+
+                                <div class="company-profile-field">
+
+                                    <label>
+
+                                        Yeni Şifre Tekrar
+
+                                    </label>
+
+                                    <input type="password" id="confirmPassword"
+                                        placeholder="Yeni şifreyi tekrar giriniz">
+
+                                </div>
+
+                            </div>
+
+                            <div class="company-profile-actions">
+
+                                <button type="submit" class="btn btn-outline">
+
+                                    <i class="fa-solid fa-lock"></i>
+
+                                    Şifreyi Güncelle
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026 LoadHub | Tüm Hakları Saklıdır.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/animations.js"></script>
+
+    <script src="../js/dashboard.js"></script>
+
+
+</body>
+
+</html>

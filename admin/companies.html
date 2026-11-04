@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Şirketler | Admin Panel</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+    <header class="admin-header">
+        <div class="container">
+
+            <nav class="admin-navbar">
+
+                <a href="dashboard.html" class="admin-logo">
+                    <img src="../images/logo.jpeg" alt="LoadHub Logo">
+                    <span>LoadHub Admin</span>
+                </a>
+
+                <ul class="admin-nav-menu">
+                    <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="users.html"><i class="fa-solid fa-users"></i> Kullanıcılar</a></li>
+                    <li><a href="companies.html"><i class="fa-solid fa-building"></i> Şirketler</a></li>
+                    <li><a href="carriers.html"><i class="fa-solid fa-truck"></i> Nakliye Firmaları</a></li>
+                    <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Raporlar</a></li>
+                </ul>
+
+                <div class="admin-actions">
+                    <a href="../index.html" class="btn btn-outline">Siteye Git</a>
+
+                    <button class="admin-logout" id="adminLogout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Çıkış
+                    </button>
+                </div>
+
+                <button class="admin-menu-toggle" id="adminMenuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="dashboard-content">
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>Şirketler</h1>
+
+                <p>
+                    Kayıtlı tüm şirketleri yönetin.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="admin-search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text" id="companySearch" placeholder="Şirket Ara..." autocomplete="off">
+
+        </div>
+
+
+
+
+        <div class="admin-companies-wrapper" id="adminCompaniesWrapper">
+
+            <div class="admin-loading">
+
+                <i class="fa-solid fa-spinner fa-spin"></i>
+
+                <span>
+                    Şirketler yükleniyor...
+                </span>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/admin.js"></script>
+
+
+
+
+
+</body>
+
+</html>

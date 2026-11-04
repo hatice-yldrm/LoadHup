@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raporlar | Admin Panel</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+
+    <header class="admin-header">
+        <div class="container">
+
+            <nav class="admin-navbar">
+
+                <a href="dashboard.html" class="admin-logo">
+                    <img src="../images/logo.jpeg" alt="LoadHub Logo">
+                    <span>LoadHub Admin</span>
+                </a>
+
+                <ul class="admin-nav-menu">
+                    <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="users.html"><i class="fa-solid fa-users"></i> Kullanıcılar</a></li>
+                    <li><a href="companies.html"><i class="fa-solid fa-building"></i> Şirketler</a></li>
+                    <li><a href="carriers.html"><i class="fa-solid fa-truck"></i> Nakliye Firmaları</a></li>
+                    <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Raporlar</a></li>
+                </ul>
+
+                <div class="admin-actions">
+                    <a href="../index.html" class="btn btn-outline">Siteye Git</a>
+
+                    <button class="admin-logout" id="adminLogout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Çıkış
+                    </button>
+                </div>
+
+                <button class="admin-menu-toggle" id="adminMenuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="dashboard-content">
+
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>
+                    Sistem Raporları
+                </h1>
+
+                <p>
+                    Platformun genel istatistiklerini görüntüleyin.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="reports-grid">
+
+
+            <div class="report-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2>
+                    2.540
+                </h2>
+
+                <p>
+                    Toplam Kullanıcı
+                </p>
+
+            </div>
+
+
+            <div class="report-card">
+
+                <i class="fa-solid fa-building"></i>
+
+                <h2>
+                    620
+                </h2>
+
+                <p>
+                    Şirket
+                </p>
+
+            </div>
+
+
+            <div class="report-card">
+
+                <i class="fa-solid fa-truck"></i>
+
+                <h2>
+                    485
+                </h2>
+
+                <p>
+                    Nakliye Firması
+                </p>
+
+            </div>
+
+
+            <div class="report-card">
+
+                <i class="fa-solid fa-box"></i>
+
+                <h2>
+                    3.870
+                </h2>
+
+                <p>
+                    Toplam İlan
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="reports-table">
+
+            <h2>
+                Aylık Raporlar
+            </h2>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Ay
+                        </th>
+
+                        <th>
+                            Yeni Kullanıcı
+                        </th>
+
+                        <th>
+                            Yeni İlan
+                        </th>
+
+                        <th>
+                            Tamamlanan İş
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Ocak
+                        </td>
+
+                        <td>
+                            152
+                        </td>
+
+                        <td>
+                            438
+                        </td>
+
+                        <td>
+                            301
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Şubat
+                        </td>
+
+                        <td>
+                            196
+                        </td>
+
+                        <td>
+                            512
+                        </td>
+
+                        <td>
+                            370
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Mart
+                        </td>
+
+                        <td>
+                            218
+                        </td>
+
+                        <td>
+                            640
+                        </td>
+
+                        <td>
+                            442
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Nisan
+                        </td>
+
+                        <td>
+                            275
+                        </td>
+
+                        <td>
+                            711
+                        </td>
+
+                        <td>
+                            536
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </main>
+
+
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>

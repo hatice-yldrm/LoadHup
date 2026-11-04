@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Kullanıcı Yönetimi | LoadHub Admin
+    </title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+
+    <header class="admin-header">
+        <div class="container">
+
+            <nav class="admin-navbar">
+
+                <a href="dashboard.html" class="admin-logo">
+                    <img src="../images/logo.jpeg" alt="LoadHub Logo">
+                    <span>LoadHub Admin</span>
+                </a>
+
+                <ul class="admin-nav-menu">
+                    <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="users.html"><i class="fa-solid fa-users"></i> Kullanıcılar</a></li>
+                    <li><a href="companies.html"><i class="fa-solid fa-building"></i> Şirketler</a></li>
+                    <li><a href="carriers.html"><i class="fa-solid fa-truck"></i> Nakliye Firmaları</a></li>
+                    <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Raporlar</a></li>
+                </ul>
+
+                <div class="admin-actions">
+                    <a href="../index.html" class="btn btn-outline">Siteye Git</a>
+
+                    <button class="admin-logout" id="adminLogout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Çıkış
+                    </button>
+                </div>
+
+                <button class="admin-menu-toggle" id="adminMenuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="admin-dashboard">
+
+
+        <section class="admin-section">
+
+
+            <div class="admin-section-header">
+
+
+                <div>
+
+
+                    <span class="admin-section-badge">
+
+                        Kullanıcı Yönetimi
+
+                    </span>
+
+
+                    <h2>
+
+                        Kullanıcılar
+
+                    </h2>
+
+
+                    <p>
+
+                        Sistemde kayıtlı tüm kullanıcıları yönetin.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ARAMA -->
+
+
+            <div class="admin-search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" id="adminUserSearch" placeholder="Kullanıcı adı, e-posta veya telefon ara..."
+                    autocomplete="off">
+
+            </div>
+
+
+            <!-- FİLTRELER -->
+
+
+            <div class="admin-user-filters">
+
+
+                <div class="admin-search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" id="userSearch" placeholder="Kullanıcı veya e-posta ara..." autocomplete="off">
+
+                </div>
+
+
+                <select id="userTypeFilter">
+
+                    <option value="all">
+                        Tüm Hesap Türleri
+                    </option>
+
+                    <option value="company">
+                        Şirket
+                    </option>
+
+                    <option value="carrier">
+                        Nakliye Firması
+                    </option>
+
+                </select>
+
+
+                <select id="userStatusFilter">
+
+                    <option value="all">
+                        Tüm Durumlar
+                    </option>
+
+                    <option value="active">
+                        Aktif
+                    </option>
+
+                    <option value="waiting">
+                        Bekliyor
+                    </option>
+
+                    <option value="inactive">
+                        Pasif
+                    </option>
+
+                </select>
+
+
+            </div>
+
+
+            <!-- KULLANICI TABLOSU -->
+
+
+            <div class="admin-table-wrapper">
+
+
+                <table class="admin-table">
+
+
+                    <thead>
+
+
+                        <tr>
+
+                            <th>
+                                Kullanıcı
+                            </th>
+
+                            <th>
+                                E-posta
+                            </th>
+
+                            <th>
+                                Telefon
+                            </th>
+
+                            <th>
+                                Hesap Türü
+                            </th>
+
+                            <th>
+                                Kayıt Tarihi
+                            </th>
+
+                            <th>
+                                Durum
+                            </th>
+
+                            <th>
+                                İşlemler
+                            </th>
+
+                        </tr>
+
+
+                    </thead>
+
+
+                    <tbody id="usersTableBody">
+
+
+                    </tbody>
+
+
+                </table>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="admin-footer">
+
+
+        <div class="container">
+
+
+            <p>
+
+                © 2026 LoadHub Admin Paneli |
+                Tüm Hakları Saklıdır.
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="../js/admin.js"></script>
+
+
+</body>
+
+</html>

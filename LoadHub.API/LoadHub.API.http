@@ -1,0 +1,6 @@
+@LoadHub.API_HostAddress = http://localhost:5210
+
+GET {{LoadHub.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

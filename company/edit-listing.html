@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>İlan Düzenle | LoadHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="navbar">
+
+
+
+
+                <a href="../index.html" class="logo">
+
+                    <img src="../images/logo.jpeg" alt="LoadHub">
+
+                    <span>
+                        LoadHub
+                    </span>
+
+                </a>
+
+
+                <nav>
+
+                    <ul class="nav-menu">
+
+
+
+
+                        <li class="notification-wrapper">
+
+                            <button type="button" class="notification-button" id="notificationButton">
+
+                                <i class="fa-solid fa-bell"></i>
+
+                                <span class="notification-badge" id="notificationBadge">
+                                    0
+                                </span>
+
+                            </button>
+
+
+                            <div class="notification-dropdown" id="notificationDropdown">
+
+                                <div class="notification-header">
+
+                                    <h3>
+                                        Bildirimler
+                                    </h3>
+
+                                    <button type="button" id="markAllNotificationsRead">
+                                        Tümünü okundu işaretle
+                                    </button>
+
+                                </div>
+
+
+                                <div id="notificationList" class="notification-list">
+
+                                    <p class="notification-empty">
+                                        Bildirim bulunmuyor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+
+
+                        <li>
+
+                            <a href="dashboard.html">
+                                Panel
+                            </a>
+
+                        </li>
+
+
+
+                        <li>
+
+                            <a href="my-listings.html" class="active">
+                                İlanlarım
+                            </a>
+
+                        </li>
+
+
+
+
+                        <li>
+
+                            <a href="offers.html">
+                                Teklifler
+                            </a>
+
+                        </li>
+
+
+
+
+                        <li>
+
+                            <a href="messages.html">
+                                Mesajlar
+                            </a>
+
+                        </li>
+
+
+
+
+                        <li>
+
+                            <a href="profile.html">
+                                Profil
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+    <section class="page-banner">
+
+        <div class="container">
+
+            <div class="page-banner-content">
+
+                <span class="section-badge">
+                    Şirket Paneli
+                </span>
+
+                <h1>
+                    İlan Düzenle
+                </h1>
+
+                <p>
+                    Yayınladığınız ilan bilgilerini buradan güncelleyebilirsiniz.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="company-create-listing">
+
+        <div class="container">
+
+            <div class="create-listing-wrapper">
+
+
+
+
+                <form id="editListingForm" class="create-listing-form">
+
+
+
+
+                    <div class="form-section">
+
+                        <div class="form-section-header">
+
+                            <h2>
+                                İlan Bilgileri
+                            </h2>
+
+                            <p>
+                                Yükünüzle ilgili temel bilgileri düzenleyin.
+                            </p>
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+
+                            <label for="listingTitle">
+                                İlan Başlığı
+                            </label>
+
+                            <input type="text" id="listingTitle" name="listingTitle"
+                                placeholder="Örn: İstanbul'dan Ankara'ya Yük Taşımacılığı" required>
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+
+                            <label for="cargoType">
+                                Yük Türü
+                            </label>
+
+                            <input type="text" id="cargoType" name="cargoType" placeholder="Örn: Genel Kargo" required>
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+
+                            <label for="weight">
+                                Ağırlık
+                            </label>
+
+                            <input type="text" id="weight" name="weight" placeholder="Örn: 12 Ton" required>
+
+                        </div>
+
+
+
+
+                        <div class="form-group">
+
+                            <label for="vehicleType">
+                                Araç Tipi
+                            </label>
+
+                            <select id="vehicleType" name="vehicleType" required>
+
+                                <option value="">
+                                    Araç Tipi Seçin
+                                </option>
+
+                                <option value="Tenteli Tır">
+                                    Tenteli Tır
+                                </option>
+
+                                <option value="Kamyon">
+                                    Kamyon
+                                </option>
+
+                                <option value="Kamyonet">
+                                    Kamyonet
+                                </option>
+
+                                <option value="Frigorifik Tır">
+                                    Frigorifik Tır
+                                </option>
+
+                                <option value="Lowbed">
+                                    Lowbed
+                                </option>
+
+                                <option value="Dorse">
+                                    Dorse
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class="form-section">
+
+                        <div class="form-section-header">
+
+                            <h2>
+                                Güzergah Bilgileri
+                            </h2>
+
+                            <p>
+                                Yükün alınacağı ve teslim edileceği yerleri düzenleyin.
+                            </p>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+
+
+
+                            <div class="form-group">
+
+                                <label for="fromCity">
+                                    Nereden
+                                </label>
+
+                                <input type="text" id="fromCity" name="fromCity" placeholder="Örn: İstanbul" required>
+
+                            </div>
+
+
+
+
+                            <div class="form-group">
+
+                                <label for="toCity">
+                                    Nereye
+                                </label>
+
+                                <input type="text" id="toCity" name="toCity" placeholder="Örn: Ankara" required>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="form-section">
+
+                        <div class="form-section-header">
+
+                            <h2>
+                                Tarih ve Teklif Bilgileri
+                            </h2>
+
+                            <p>
+                                Taşıma tarihi ve teklif bilgilerini düzenleyin.
+                            </p>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+
+
+
+                            <div class="form-group">
+
+                                <label for="loadingDate">
+                                    Yükleme Tarihi
+                                </label>
+
+                                <input type="date" id="loadingDate" name="loadingDate" required>
+
+                            </div>
+
+
+
+
+                            <div class="form-group">
+
+                                <label for="offerDeadline">
+                                    Teklif Son Tarihi
+                                </label>
+
+                                <input type="date" id="offerDeadline" name="offerDeadline">
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="form-section">
+
+                        <div class="form-section-header">
+
+                            <h2>
+                                Açıklama
+                            </h2>
+
+                            <p>
+                                Nakliye firmalarının bilmesi gereken ek bilgileri düzenleyin.
+                            </p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="listingDescription">
+                                İlan Açıklaması
+                            </label>
+
+                            <textarea id="listingDescription" name="listingDescription" rows="6"
+                                placeholder="Yükünüz hakkında detaylı bilgi verin..."></textarea>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="form-actions">
+
+
+
+
+                        <a href="my-listings.html" class="btn btn-outline">
+
+                            <i class="fa-solid fa-arrow-left"></i>
+
+                            İptal
+
+                        </a>
+
+
+
+
+                        <button type="submit" class="btn btn-primary">
+
+                            <i class="fa-solid fa-floppy-disk"></i>
+
+                            Değişiklikleri Kaydet
+
+                        </button>
+
+
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 LoadHub | Tüm Hakları Saklıdır.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/animations.js"></script>
+
+    <script src="../js/dashboard.js"></script>
+
+    <script src="../js/edit-listing.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Paneli | LoadHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+
+    <header class="admin-header">
+        <div class="container">
+
+            <nav class="admin-navbar">
+
+                <a href="dashboard.html" class="admin-logo">
+                    <img src="../images/logo.jpeg" alt="LoadHub Logo">
+                    <span>LoadHub Admin</span>
+                </a>
+
+                <ul class="admin-nav-menu">
+                    <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="users.html"><i class="fa-solid fa-users"></i> Kullanıcılar</a></li>
+                    <li><a href="companies.html"><i class="fa-solid fa-building"></i> Şirketler</a></li>
+                    <li><a href="carriers.html"><i class="fa-solid fa-truck"></i> Nakliye Firmaları</a></li>
+                    <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Raporlar</a></li>
+                </ul>
+
+                <div class="admin-actions">
+                    <a href="../index.html" class="btn btn-outline">Siteye Git</a>
+
+                    <button class="admin-logout" id="adminLogout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Çıkış
+                    </button>
+                </div>
+
+                <button class="admin-menu-toggle" id="adminMenuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="admin-dashboard">
+
+
+        <section class="admin-page-header">
+
+            <div class="container">
+
+                <div class="admin-page-header-content">
+
+                    <div>
+
+                        <span class="section-badge">
+                            Yönetim Paneli
+                        </span>
+
+                        <h1>
+                            Admin Dashboard
+                        </h1>
+
+                        <p>
+                            LoadHub platformundaki kullanıcıları,
+                            şirketleri ve nakliye firmalarını buradan
+                            yönetebilirsiniz.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="admin-stats">
+
+            <div class="container">
+
+                <div class="admin-stats-grid">
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <div class="admin-stat-content">
+
+                            <span>
+                                Toplam Kullanıcı
+                            </span>
+
+                            <h2 id="totalUsers">
+                                0
+                            </h2>
+
+                            <p>
+                                Sistemde kayıtlı kullanıcılar
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+
+                            <i class="fa-solid fa-building"></i>
+
+                        </div>
+
+                        <div class="admin-stat-content">
+
+                            <span>
+                                Toplam Şirket
+                            </span>
+
+                            <h2 id="totalCompanies">
+                                0
+                            </h2>
+
+                            <p>
+                                Sistemde kayıtlı şirketler
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+
+                            <i class="fa-solid fa-truck"></i>
+
+                        </div>
+
+                        <div class="admin-stat-content">
+
+                            <span>
+                                Nakliye Firmaları
+                            </span>
+
+                            <h2 id="totalCarriers">
+                                0
+                            </h2>
+
+                            <p>
+                                Sistemde kayıtlı nakliye firmaları
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+
+                            <i class="fa-solid fa-box"></i>
+
+                        </div>
+
+                        <div class="admin-stat-content">
+
+                            <span>
+                                Toplam İlan
+                            </span>
+
+                            <h2 id="totalListings">
+                                0
+                            </h2>
+
+                            <p>
+                                Sistemde oluşturulan ilanlar
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="admin-content">
+
+            <div class="container">
+
+                <div class="admin-dashboard-grid">
+
+
+                    <div class="admin-card">
+
+                        <div class="admin-card-header">
+
+                            <div>
+
+                                <h2>
+                                    Son Kayıt Olan Kullanıcılar
+                                </h2>
+
+                                <p>
+                                    Platforma yeni katılan kullanıcılar
+                                </p>
+
+                            </div>
+
+                            <a href="users.html">
+                                Tümünü Gör
+                            </a>
+
+                        </div>
+
+
+                        <div class="admin-table-wrapper">
+
+                            <table class="admin-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>
+                                            Kullanıcı
+                                        </th>
+
+                                        <th>
+                                            E-posta
+                                        </th>
+
+                                        <th>
+                                            Hesap Türü
+                                        </th>
+
+                                        <th>
+                                            Durum
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody id="adminRecentUsersBody">
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-card">
+
+                        <div class="admin-card-header">
+
+                            <div>
+
+                                <h2>
+                                    Hızlı İşlemler
+                                </h2>
+
+                                <p>
+                                    Yönetim işlemlerine hızlıca erişin
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="admin-quick-actions">
+
+
+                            <a href="users.html" class="admin-action-card">
+
+                                <i class="fa-solid fa-users"></i>
+
+                                <span>
+                                    Kullanıcıları Yönet
+                                </span>
+
+                            </a>
+
+
+                            <a href="companies.html" class="admin-action-card">
+
+                                <i class="fa-solid fa-building"></i>
+
+                                <span>
+                                    Şirketleri Yönet
+                                </span>
+
+                            </a>
+
+
+                            <a href="carriers.html" class="admin-action-card">
+
+                                <i class="fa-solid fa-truck"></i>
+
+                                <span>
+                                    Nakliye Firmalarını Yönet
+                                </span>
+
+                            </a>
+
+
+                            <a href="reports.html" class="admin-action-card">
+
+                                <i class="fa-solid fa-chart-pie"></i>
+
+                                <span>
+                                    Raporları Görüntüle
+                                </span>
+
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="admin-activities">
+
+            <div class="container">
+
+                <div class="admin-card">
+
+                    <div class="admin-card-header">
+
+                        <div>
+
+                            <h2>
+                                Son Aktiviteler
+                            </h2>
+
+                            <p>
+                                Platformdaki son işlemler
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-activity-list">
+
+
+                        <div class="admin-activity-item">
+
+                            <div class="admin-activity-icon">
+
+                                <i class="fa-solid fa-user-plus"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Yeni kullanıcı kaydı
+                                </strong>
+
+                                <p>
+                                    Yeni kullanıcı sisteme kayıt oldu.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="admin-activity-item">
+
+                            <div class="admin-activity-icon">
+
+                                <i class="fa-solid fa-building"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Yeni şirket kaydı
+                                </strong>
+
+                                <p>
+                                    Yeni şirket platforma katıldı.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="admin-activity-item">
+
+                            <div class="admin-activity-icon">
+
+                                <i class="fa-solid fa-truck"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Nakliye firması kaydı
+                                </strong>
+
+                                <p>
+                                    Yeni nakliye firması sisteme katıldı.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="admin-footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 LoadHub Admin Paneli | Tüm Hakları Saklıdır.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>

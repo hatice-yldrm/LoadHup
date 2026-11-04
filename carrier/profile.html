@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profilim | LoadHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="navbar">
+
+
+                <a href="../index.html" class="logo">
+
+                    <img src="../images/logo.jpeg" alt="LoadHub">
+
+                    <span>
+
+                        LoadHub
+
+                    </span>
+
+                </a>
+
+
+                <nav>
+
+                    <ul class="nav-menu">
+                        <li class="notification-wrapper">
+
+                            <button type="button" class="notification-button" id="notificationButton">
+
+                                <i class="fa-solid fa-bell"></i>
+
+                                <span class="notification-badge" id="notificationBadge">
+                                    0
+                                </span>
+
+                            </button>
+
+                            <div class="notification-dropdown" id="notificationDropdown">
+
+                                <div class="notification-header">
+
+                                    <h3>Bildirimler</h3>
+
+                                    <button type="button" id="markAllNotificationsRead">
+
+                                        Tümünü okundu işaretle
+
+                                    </button>
+
+                                </div>
+
+                                <div id="notificationList" class="notification-list">
+
+                                    <p class="notification-empty">
+                                        Bildirim bulunmuyor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="dashboard.html">
+
+                                Panel
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="jobs.html">
+
+                                İşler
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="messages.html">
+
+                                Mesajlar
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="my-offers.html">
+
+                                Tekliflerim
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="profile.html" class="active">
+
+                                Profil
+
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="page-banner">
+
+        <div class="container">
+
+            <div class="page-banner-content">
+
+                <span class="section-badge">
+
+                    Nakliye Firması Paneli
+
+                </span>
+
+                <h1>
+
+                    Profilim
+
+                </h1>
+
+                <p>
+
+                    Firma ve iletişim bilgilerinizi buradan güncelleyebilirsiniz.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="carrier-profile" id="carrierProfile">
+
+        <div class="container">
+
+            <div class="carrier-profile-grid">
+
+                <div class="carrier-profile-sidebar">
+
+                    <div class="carrier-profile-card">
+
+                        <div class="carrier-profile-avatar">
+
+                            <i class="fa-solid fa-truck"></i>
+
+                        </div>
+
+                        <h2 id="carrierCompanyTitle">
+
+                            Yıldız Nakliyat
+
+                        </h2>
+
+                        <p>
+
+                            Nakliye Firması
+
+                        </p>
+
+                        <span class="carrier-profile-status">
+
+                            <i class="fa-solid fa-circle"></i>
+
+                            Aktif Hesap
+
+                        </span>
+
+                    </div>
+
+                    <div class="carrier-profile-summary">
+
+                        <div>
+
+                            <strong>
+
+                                48
+
+                            </strong>
+
+                            <span>
+
+                                Tamamlanan İş
+
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+
+                                4.8
+
+                            </strong>
+
+                            <span>
+
+                                Değerlendirme
+
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+
+                                96%
+
+                            </strong>
+
+                            <span>
+
+                                Başarı Oranı
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="carrier-profile-content">
+
+                    <div class="carrier-profile-section">
+
+                        <div class="carrier-profile-section-header">
+
+                            <div>
+
+                                <h2>
+
+                                    Firma Bilgileri
+
+                                </h2>
+
+                                <p>
+
+                                    Nakliye firmanızın temel bilgilerini güncelleyin.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <form id="carrierProfileForm" class="carrier-profile-form">
+
+                            <div class="carrier-profile-form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="carrierCompanyName">
+
+                                        Firma Adı
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-building"></i>
+
+                                        <input type="text" id="carrierCompanyName" placeholder="Firma Adı">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="contactName">
+
+                                        Yetkili Ad Soyad
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-user"></i>
+
+                                        <input type="text" id="contactName" value="Ahmet Yılmaz">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="carrierEmail">
+
+                                        E-posta Adresi
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-envelope"></i>
+
+                                        <input type="email" id="carrierEmail" placeholder="E-posta">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="carrierPhone">
+
+                                        Telefon
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-phone"></i>
+
+                                        <input type="tel" id="carrierPhone" placeholder="Telefon">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="city">
+
+                                        Merkez Şehir
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-location-dot"></i>
+
+                                        <select id="city">
+
+                                            <<option value="">Şehir Seçiniz</option>
+                                                <option value="Adana">Adana</option>
+                                                <option value="Adıyaman">Adıyaman</option>
+                                                <option value="Afyonkarahisar">Afyonkarahisar</option>
+                                                <option value="Ağrı">Ağrı</option>
+                                                <option value="Aksaray">Aksaray</option>
+                                                <option value="Amasya">Amasya</option>
+                                                <option value="Ankara">Ankara</option>
+                                                <option value="Antalya">Antalya</option>
+                                                <option value="Ardahan">Ardahan</option>
+                                                <option value="Artvin">Artvin</option>
+                                                <option value="Aydın">Aydın</option>
+                                                <option value="Balıkesir">Balıkesir</option>
+                                                <option value="Bartın">Bartın</option>
+                                                <option value="Batman">Batman</option>
+                                                <option value="Bayburt">Bayburt</option>
+                                                <option value="Bilecik">Bilecik</option>
+                                                <option value="Bingöl">Bingöl</option>
+                                                <option value="Bitlis">Bitlis</option>
+                                                <option value="Bolu">Bolu</option>
+                                                <option value="Burdur">Burdur</option>
+                                                <option value="Bursa">Bursa</option>
+                                                <option value="Çanakkale">Çanakkale</option>
+                                                <option value="Çankırı">Çankırı</option>
+                                                <option value="Çorum">Çorum</option>
+                                                <option value="Denizli">Denizli</option>
+                                                <option value="Diyarbakır">Diyarbakır</option>
+                                                <option value="Düzce">Düzce</option>
+                                                <option value="Edirne">Edirne</option>
+                                                <option value="Elazığ">Elazığ</option>
+                                                <option value="Erzincan">Erzincan</option>
+                                                <option value="Erzurum">Erzurum</option>
+                                                <option value="Eskişehir">Eskişehir</option>
+                                                <option value="Gaziantep">Gaziantep</option>
+                                                <option value="Giresun">Giresun</option>
+                                                <option value="Gümüşhane">Gümüşhane</option>
+                                                <option value="Hakkâri">Hakkâri</option>
+                                                <option value="Hatay">Hatay</option>
+                                                <option value="Iğdır">Iğdır</option>
+                                                <option value="Isparta">Isparta</option>
+                                                <option value="İstanbul">İstanbul</option>
+                                                <option value="İzmir">İzmir</option>
+                                                <option value="Kahramanmaraş">Kahramanmaraş</option>
+                                                <option value="Karabük">Karabük</option>
+                                                <option value="Karaman">Karaman</option>
+                                                <option value="Kars">Kars</option>
+                                                <option value="Kastamonu">Kastamonu</option>
+                                                <option value="Kayseri">Kayseri</option>
+                                                <option value="Kırıkkale">Kırıkkale</option>
+                                                <option value="Kırklareli">Kırklareli</option>
+                                                <option value="Kırşehir">Kırşehir</option>
+                                                <option value="Kilis">Kilis</option>
+                                                <option value="Kocaeli">Kocaeli</option>
+                                                <option value="Konya">Konya</option>
+                                                <option value="Kütahya">Kütahya</option>
+                                                <option value="Malatya">Malatya</option>
+                                                <option value="Manisa">Manisa</option>
+                                                <option value="Mardin">Mardin</option>
+                                                <option value="Mersin">Mersin</option>
+                                                <option value="Muğla">Muğla</option>
+                                                <option value="Muş">Muş</option>
+                                                <option value="Nevşehir">Nevşehir</option>
+                                                <option value="Niğde">Niğde</option>
+                                                <option value="Ordu">Ordu</option>
+                                                <option value="Osmaniye">Osmaniye</option>
+                                                <option value="Rize">Rize</option>
+                                                <option value="Sakarya">Sakarya</option>
+                                                <option value="Samsun">Samsun</option>
+                                                <option value="Siirt">Siirt</option>
+                                                <option value="Sinop">Sinop</option>
+                                                <option value="Sivas">Sivas</option>
+                                                <option value="Şanlıurfa">Şanlıurfa</option>
+                                                <option value="Şırnak">Şırnak</option>
+                                                <option value="Tekirdağ">Tekirdağ</option>
+                                                <option value="Tokat">Tokat</option>
+                                                <option value="Trabzon">Trabzon</option>
+                                                <option value="Tunceli">Tunceli</option>
+                                                <option value="Uşak">Uşak</option>
+                                                <option value="Van">Van</option>
+                                                <option value="Yalova">Yalova</option>
+                                                <option value="Yozgat">Yozgat</option>
+                                                <option value="Zonguldak">Zonguldak</option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="vehicleType">
+
+                                        Ana Araç Tipi
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-truck"></i>
+
+                                        <select id="vehicleType">
+
+                                            <option>Tenteli Tır</option>
+                                            <option>Kamyon</option>
+                                            <option>Frigorifik Tır</option>
+                                            <option>Lowbed</option>
+                                            <option>Panelvan</option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="address">
+
+                                    Firma Adresi
+
+                                </label>
+
+                                <div class="input-group">
+
+                                    <i class="fa-solid fa-map-location-dot"></i>
+
+                                    <textarea id="address" rows="4"></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="carrier-profile-actions">
+
+                                <button type="submit" class="btn btn-primary">
+
+                                    <i class="fa-solid fa-floppy-disk"></i>
+
+                                    Bilgileri Kaydet
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="carrier-profile-section">
+
+                        <div class="carrier-profile-section-header">
+
+                            <div>
+
+                                <h2>
+
+                                    Taşımacılık Bilgileri
+
+                                </h2>
+
+                                <p>
+
+                                    Sunduğunuz taşıma hizmetleri hakkında bilgi verin.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <form class="carrier-profile-form">
+
+                            <div class="carrier-profile-form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="carrierVehicleCount">
+
+                                        Araç Sayısı
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-truck-front"></i>
+
+                                        <input type="number" id="carrierVehicleCount" min="1">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="capacity">
+
+                                        Maksimum Taşıma Kapasitesi
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-weight-hanging"></i>
+
+                                        <input type="text" id="capacity" value="24 Ton">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="serviceAreas">
+
+                                    Hizmet Bölgeleri
+
+                                </label>
+
+                                <div class="input-group">
+
+                                    <i class="fa-solid fa-map"></i>
+
+                                    <input type="text" id="serviceAreas" value="Marmara, Ege, İç Anadolu">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="aboutCompany">
+
+                                    Firma Hakkında
+
+                                </label>
+
+                                <div class="input-group">
+
+                                    <i class="fa-solid fa-file-lines"></i>
+
+                                    <textarea id="aboutCompany"
+                                        rows="5">Yıldız Nakliyat olarak Türkiye genelinde güvenilir ve zamanında yük taşımacılığı hizmeti sunuyoruz.</textarea>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="carrier-profile-section">
+
+                        <div class="carrier-profile-section-header">
+
+                            <div>
+
+                                <h2>
+
+                                    Hesap Güvenliği
+
+                                </h2>
+
+                                <p>
+
+                                    Hesap şifrenizi değiştirebilirsiniz.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <form id="changePasswordForm" class="carrier-profile-form">
+
+                            <div class="carrier-profile-form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="currentPassword">
+
+                                        Mevcut Şifre
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-lock"></i>
+
+                                        <input type="password" id="currentPassword" placeholder="Mevcut şifreniz">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="newPassword">
+
+                                        Yeni Şifre
+
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <i class="fa-solid fa-key"></i>
+
+                                        <input type="password" id="newPassword" placeholder="Yeni şifreniz">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="carrier-profile-actions">
+
+                                <button type="submit" class="btn btn-primary">
+
+                                    <i class="fa-solid fa-shield-halved"></i>
+
+                                    Şifreyi Güncelle
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026 LoadHub | Tüm Hakları Saklıdır.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/animations.js"></script>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
