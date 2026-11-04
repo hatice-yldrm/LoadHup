@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "LtNX7E5TAKAY4MBvyYsw5F2T388aUb1tXzf0X5RoLTY=",
+  "Source": "LoadHub.API",
+  "BasePath": "_content/LoadHub.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
